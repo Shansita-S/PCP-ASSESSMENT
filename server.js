@@ -6,7 +6,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED ="0";
 
 app.use(express.json());
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 let movies = [];
 
