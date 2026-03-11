@@ -2,9 +2,10 @@ const express = require("express");
 const axios = require("axios");
 
 const app = express();
-process.env.NODE_TLS_REJECT_UNAUTHORIZED ="0";
 
 app.use(express.json());
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 const PORT = process.env.PORT || 5000;
 
